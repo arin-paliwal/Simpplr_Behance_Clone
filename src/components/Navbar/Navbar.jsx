@@ -1,0 +1,143 @@
+import React, { useState } from "react";
+import behance_logo from "../../assets/images/Behance-Logo.png";
+import adobe_logo from "../../assets/images/adobe.png";
+import { Navbar1 } from "../../data/navbar/Navbar1";
+import { ChevronDown, Clipboard, Info, PlusCircle, Search } from "lucide-react";
+import { Navbar2 } from './../../data/navbar/Navbar2';
+import Notifications from "./Notification";
+import LogIn from "./LogIn";
+import SignUp from "./SignUp";
+
+const Navbar = () => {
+  const [exploreHover, setExploreHover] = useState(false);
+  const [hireFreelancersHover, setHireFreelancersHover] = useState(false);
+
+  return (
+    <div className="flex flex-row gap-4 items-center">
+      <div className="flex w-[30%] items-center gap-5">
+        <div className="flex mt-[-2px]">
+          <img src={behance_logo} alt="behance-logo" width={80} height={80} />
+        </div>
+        <div className="flex justify-between items-center gap-5">
+          {Object.keys(Navbar1).map((item, index) => (
+            <div key={index} className="flex flex-col gap-2 relative">
+              <div
+                className="flex gap-1 items-center"
+                onMouseEnter={() =>
+                  Navbar1[item].dropdownItems && setExploreHover(true)
+                }
+                onMouseLeave={() =>
+                  Navbar1[item].dropdownItems && setExploreHover(false)
+                }
+              >
+                <h1 className="cursor-pointer font-bold">
+                  {Navbar1[item].heading}
+                </h1>
+                {Navbar1[item].dropdownItems && (
+                  <ChevronDown size={17} className="cursor-pointer" />
+                )}
+              </div>
+              {Navbar1[item].dropdownItems && exploreHover && (
+                <ul
+                  className="absolute top-full left-0 py-4 bg-white shadow-xl rounded w-[13.5rem]"
+                  onMouseEnter={() => setExploreHover(true)}
+                  onMouseLeave={() => setExploreHover(false)}
+                >
+                  <div className="flex flex-col gap-2">
+                    <div className="flex flex-col ml-6 gap-1 text-[0.95rem]">
+                      <h1 className="font-semibold text-blue1">
+                        Search & Explore
+                      </h1>
+                      <h1 className="font-semibold ">Curated Galleries</h1>
+                    </div>
+                    <hr className="my-2" />
+                    {Navbar1[item].dropdownItems.map((dropdownItem, index) => (
+                      <li key={index} className="ml-6 text-sm text-gray-500">
+                        <a href={dropdownItem.route}>{dropdownItem.name}</a>
+                      </li>
+                    ))}
+                  </div>
+                </ul>
+              )}
+            </div>
+          ))}
+          <div className="flex text-[0.6rem] font-semibold tracking-widest ml-[-8px] bg-blue-600 text-white px-2 py-1 rounded-md">
+            PRO
+          </div>
+        </div>
+      </div>
+      <hr className="w-[1px] h-[30px] bg-gray-300" />
+      <div className="flex w-[70%] justify-between items-center">
+        <div className="flex">
+          {Object.keys(Navbar2).map((item, index) => (
+            <div key={index} className="flex flex-col gap-2 relative">
+              <div
+                className="flex gap-1 items-center"
+                onMouseEnter={() =>
+                  Navbar2[item].dropdown && setHireFreelancersHover(true)
+                }
+                onMouseLeave={() =>
+                  Navbar2[item].dropdown && setHireFreelancersHover(false)
+                }
+              >
+                <h1 className="cursor-pointer font-bold">
+                  {Navbar2[item].heading}
+                </h1>
+                {Navbar2[item].dropdown && (
+                  <ChevronDown size={17} className="cursor-pointer" />
+                )}
+              </div>
+              {Navbar2[item].dropdown && hireFreelancersHover && (
+                <ul
+                  className="absolute top-full left-0 bg-white shadow-md py-4 rounded w-[15rem]"
+                  onMouseEnter={() => setHireFreelancersHover(true)}
+                  onMouseLeave={() => setHireFreelancersHover(false)}
+                >
+                  <div className="flex flex-col ml-6 gap-2">
+                    <div className="flex gap-2 items-center">
+                      <Info size={15} />
+                      <h1 className="font-semibold">Hiring in Behance</h1>
+                    </div>
+                    <div className="flex gap-2 items-center">
+                      <Search size={15} />
+                      <h1 className="font-semibold">Find Creatives</h1>
+                    </div>
+                    <div className="flex gap-2 items-center">
+                      <Clipboard size={15} />
+                      <h1 className="font-semibold">Hiring in Behance</h1>
+                    </div>
+                    <div className="flex gap-2 items-center">
+                      <PlusCircle size={15} />
+                      <h1 className="font-semibold">New Freelance Projects</h1>
+                    </div>
+                  </div>
+                  <hr className="my-4" />
+                  <div className="flex flex-col ml-6 gap-2">
+                    {Navbar2[item].dropdown2.map((dropdownItem, index) => (
+                      <h1 key={index} className="text-sm text-gray-500">
+                        {dropdownItem.heading}
+                      </h1>
+                    ))}
+                  </div>
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+        <div className="flex gap-4 items-center">
+          <Notifications />
+          <LogIn />
+          <SignUp />
+          <div className="flex">
+            <button className="flex gap-1 items-center">
+              <img src={adobe_logo} alt="adobe-logo" width={20} height={20} />
+              <h1 className="font-bold cursor-pointer">Adobe</h1>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

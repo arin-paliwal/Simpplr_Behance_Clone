@@ -2,8 +2,6 @@ export const Navbar1 = {
   Explore: {
     heading: "Explore",
     dropdownItems: [
-      { name: "Search & Explore", route: "/explore/search-explore" },
-      { name: "Curated Galleries", route: "/explore/curated-galleries" },
       { name: "Best of Behance", route: "/explore/best-of-behance" },
       { name: "Graphic Design", route: "/explore/graphic-design" },
       { name: "Illustration", route: "/explore/illustration" },
