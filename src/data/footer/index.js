@@ -23,7 +23,6 @@ export const findTalent = {
     { name: "Illustrators", route: "/illustrators" },
   ],
 };
-
 export const behance = {
   heading: "Behance",
   options: [
@@ -45,4 +44,30 @@ export const social = {
     { name: "Facebook", route: "/facebook" },
     { name: "LinkedIn", route: "/linkedin" },
   ],
+};
+export const CopyrightBar = {
+  "English": {
+    heading: "English",
+    route: "/english"
+  },
+  "TOU": {
+    heading: "TOU",
+    route: "/tou"
+  },
+  "Privacy": {
+    heading: "Privacy",
+    route: "/privacy"
+  },
+  "Community": {
+    heading: "Community",
+    route: "/community"
+  },
+  "CookiePreferences": {
+    heading: "Cookie preferences",
+    route: "/cookie-preferences"
+  },
+  "DoNotSell": {
+    heading: "Do not sell or share my personal information",
+    route: "/do-not-sell"
+  }
 };
