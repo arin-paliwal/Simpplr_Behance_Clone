@@ -2,7 +2,7 @@ import React from 'react'
 import adobe from '../../assets/images/adobe.png'
 const Copyright = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex sm:flex-row flex-col gap-4 sm:justify-between sm:items-center">
       <div className="flex gap-4 items-center">
         <div className="flex">
           <svg

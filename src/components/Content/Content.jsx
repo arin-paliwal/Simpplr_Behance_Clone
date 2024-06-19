@@ -6,7 +6,7 @@ import PopupSign from "../Footer/PopupSign";
 import { useAppState } from "../../context/Context";
 const ContentCard = (item) => {
   return (
-    <div className="flex flex-col gap-1 w-[22rem]">
+    <div className="flex flex-col gap-1">
       <div className="flex">
         <img
           // src={item.images[Math.random() * item.images.length | 0]}
@@ -55,7 +55,7 @@ const Content = () => {
   const { recommendedStates, setRecommendedStates } = useAppState("");
   const [Cardsdata, setCardsData] = useState(data);
   useEffect(() => {
-    if (recommendedStates !== "recommended") {
+    if (recommendedStates !== "") {
       const filtered = data.filter((item) =>
         item.sort_by.includes(recommendedStates)
       );
