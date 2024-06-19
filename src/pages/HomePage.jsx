@@ -4,6 +4,7 @@ import Search from '../components/SearchBar/Search'
 import Content from '../components/Content/Content'
 import Footer from '../components/Footer/Footer'
 import Copyright from '../components/Footer/Copyright'
+import FooterSection from '../components/Footer'
 
 const HomePage = () => {
   return (
@@ -11,8 +12,7 @@ const HomePage = () => {
         <Navbar />
         <Search />
         <Content />
-        <Footer />
-        <Copyright />
+        <FooterSection />
     </div>
   )
 }
