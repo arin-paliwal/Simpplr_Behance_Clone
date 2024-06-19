@@ -1,9 +1,63 @@
-import React from 'react'
-
+/* eslint-disable no-unused-vars */
+import { Eye, ThumbsUp } from 'lucide-react';
+import React, { useState } from 'react'
+import { data } from '../../data/content/images';
+import PopupSign from '../Footer/PopupSign';
+const ContentCard=(item)=>{
+return (
+  <div className="flex flex-col gap-1 w-[22rem]">
+    <div className="flex">
+      <img
+        src={item.images[0]}
+        alt="random"
+        className="rounded-md w-[24rem] h-[16rem] object-cover"
+        width={400}
+        height={400}
+      />
+    </div>
+    <div className="flex flex-col">
+      <div className="flex justify-between">
+        <div className="flex">
+          <h1 className="font-bold">{item.image_name}</h1>
+        </div>
+        <div className="flex gap-3 text-sm">
+          <div className="flex gap-1 items-center">
+            <ThumbsUp size={16} className="text-gray-500" />
+            <h1 className="font-bold">
+              {item.likes > 1000
+                ? `${(item.likes / 1000).toFixed(1)}k`
+                : item.likes}
+            </h1>
+          </div>
+          <div className="flex gap-1 items-center">
+            <Eye size={16} className="text-gray-500" />
+            <h1 className="font-bold">
+              {item.views > 1000
+                ? `${(item.views / 1000).toFixed(1)}k`
+                : item.views}
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div className="flex">
+        <h1 className="text-sm text-gray-500 mt-[-2px]">{item.creator_name}</h1>
+      </div>
+    </div>
+  </div>
+);
+}
 const Content = () => {
+  const [signupActive, setSignupActive] = useState(true);
   return (
-    <div>Content</div>
-  )
+    <div className="flex flex-col gap-8">
+      <div className="flex flex-wrap gap-4">
+        {data.map((item, index) => (
+          <ContentCard key={index} {...item} />
+        ))}
+      </div>
+      {signupActive && <PopupSign />}
+    </div>
+  );
 }
 
 export default Content
