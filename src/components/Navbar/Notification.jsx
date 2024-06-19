@@ -1,13 +1,43 @@
 import { Bell } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import proLogo from "../../assets/logos/pro.png";
+import beLogo from "../../assets/logos/blue-logo-be.png";
 
-const NotificationItem = ({ update_title, update, timestamp }) => (
-  <div className="w-full flex flex-col gap-3 p-3 bg-white">
-    <div className="flex flex-col gap-1">
-      <div className="text-gray-500 text-sm">{update_title}</div>
-      <div className="font-semibold text-gray-900">{update}</div>
+import { notificationsData } from "../../data/navbar/Navbar2";
+const NotificationItem = ({
+  heading,
+  description,
+  subheading,
+  subdescription,
+  posted,
+}) => (
+  <div className="flex p-3 tracking-tight leading-5">
+    <div className="flex">
+      <div className="flex w-[5rem] h-[5rem]">
+        <img
+          src={beLogo}
+          alt="behance-blue-logo"
+          className="object-cover rounded-full p-3"
+        />
+      </div>
     </div>
-    <div className="text-xs text-blue-600">{timeAgo(timestamp)}</div>
+    <div className="flex flex-col gap-2">
+      <div className="flex">
+        <h1 className="font-semibold">{heading}</h1>
+      </div>
+      <div className="flex">
+        <h1 className="">{description}</h1>
+      </div>
+      <div className="flex items-center mt-2 gap-3 text-sm">
+        <div className="flex">
+          <img src={proLogo} alt="pro-logo" className="w-[6rem] h-[5rem] rounded-md" />
+        </div>
+        <div className="flex flex-col gap-1">
+          <h1 className="font-semibold">{subheading}</h1>
+          <button className="text-blue-500 border w-fit px-3 py-1 font-bold bg-blue-50 rounded-2xl">{subdescription}</button>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
@@ -44,19 +74,16 @@ const Notifications = () => {
           onMouseLeave={handleMouseLeave}
           ref={dropdown}
           id="dropdownNotification"
-          className="z-20 flex flex-col absolute right-[2rem] w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow mt-5"
+          className="z-20 flex flex-col absolute right-[3rem] w-full max-w-[26rem] bg-white divide-y divide-gray-100 rounded-lg shadow"
           aria-labelledby="dropdownNotificationButton"
         >
-          <div className="block px-4 py-2 font-medium text-center text-gray-700 rounded-t-lg bg-[#f5f5f5]">
-            Notifications
+          <div className="block px-4 py-3 font-medium text-center text-gray-700 rounded-t-lg ">
+            Your Notifications
           </div>
-          <div className="divide-y overflow-y-auto componentScroll max-h-[20rem] z-10 divide-gray-100 backdrop-filter backdrop-blur-lg backdrop-brightness-75">
-            {responseData?.data?.map((item, index) => (
+          <div className=" overflow-y-auto componentScroll max-h-[30rem] z-10 divide-gray-100 backdrop-filter backdrop-blur-lg">
+            {notificationsData.map((item, index) => (
               <NotificationItem key={index} {...item} />
             ))}
-          </div>
-          <div className="block px-4 py-1 font-medium text-center text-gray-700 rounded-t-lg bg-[#f5f5f5]">
-            View All
           </div>
         </div>
       )}

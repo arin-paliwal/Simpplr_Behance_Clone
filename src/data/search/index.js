@@ -1,29 +1,29 @@
-export const sort_by_search_bar = {
-    Recommended: {
+export const sort_by_search_bar = [
+    {
         heading: "Recommended",
         state: "recommended"
     },
-    Curated: {
+    {
         heading: "Curated",
         state: "curated"
     },
-    MostAppreciated: {
+     {
         heading: "Most Appreciated",
         state: "most_appreciated"
     },
-    MostViewed: {
+     {
         heading: "Most Viewed",
         state: "most_viewed"
     },
-    MostDiscussed: {
+     {
         heading: "Most Discussed",
         state: "most_discussed"
     },
-    MostRecent: {
+     {
         heading: "Most Recent",
         state: "most_recent"
     }
-};
+];
 export const timePeriods = {
     Today: {
         heading: "Today",
