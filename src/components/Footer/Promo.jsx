@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Promo = () => {
   return (
-    <div className="flex flex-col gap-4 items-center justify-center mt-[5rem]">
-      <hr className="w-full border-none h-[5px] bg-gradient-to-r from-blue-500 via-yellow-500 to-red-500" />
+    <div className="flex flex-col gap-4 items-center justify-center mt-[5rem] mb-3">
+      <hr className="w-full border-none h-[5px] bg-gradient-to-r from-blue-500 via-yellow-500 to-red-500 " />
 
       <p className="text-center">
         <span className="font-bold">Upgrade to Behance Pro today:&nbsp;</span>
@@ -15,6 +15,6 @@ const Promo = () => {
       </p>
     </div>
   );
-}
+};
 
-export default Promo
+export default Promo;

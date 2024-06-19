@@ -8,13 +8,15 @@ import FooterSection from '../components/Footer'
 
 const HomePage = () => {
   return (
-    <div className='px-6 py-2 flex flex-col gap-4'>
+    <div className="flex flex-col">
+      <div className="px-6 py-2 flex flex-col gap-4">
         <Navbar />
         <Search />
         <Content />
-        <FooterSection />
+      </div>
+      <FooterSection />
     </div>
-  )
+  );
 }
 
 export default HomePage
