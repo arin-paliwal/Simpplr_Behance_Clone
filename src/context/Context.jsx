@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 import  { createContext, useContext, useState } from "react";
 
@@ -5,12 +6,15 @@ const AppContext = createContext(undefined);
 
 export function AppProvider({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [recommendedStates, setRecommendedStates] = useState("");
 
   return (
     <AppContext.Provider
       value={{
         sidebarOpen,
         setSidebarOpen,
+        recommendedStates,
+        setRecommendedStates,
       }}
     >
       {children}
@@ -18,7 +22,6 @@ export function AppProvider({ children }) {
   );
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 export function useAppState() {
   const context = useContext(AppContext);
   if (!context) {

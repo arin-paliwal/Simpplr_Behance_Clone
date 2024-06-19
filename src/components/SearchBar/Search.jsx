@@ -7,15 +7,18 @@ import {
 import { useEffect, useRef, useState } from "react";
 import { sort_by_search_bar } from "../../data/search";
 import { searchSuggestions } from "../../data/search/suggestions";
+import { useAppState } from "../../context/Context";
 
 const Search = () => {
+  const { setRecommendedStates } = useAppState();
   const [recommendedModalOpen, setRecommendedModalOpen] = useState(false);
   const [recommendedState, setRecommendedState] = useState(
     sort_by_search_bar[0].heading
   );
   const [searchQuery, setSearchQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
-  const [searchSuggestionModalOpen, setSearchSuggestionModalOpen] = useState(false)
+  const [searchSuggestionModalOpen, setSearchSuggestionModalOpen] =
+    useState(false);
   const trigger = useRef(null);
   const dropdown = useRef(null);
   useEffect(() => {
@@ -146,7 +149,10 @@ const Search = () => {
                 <h1
                   key={index}
                   className="font-semibold cursor-pointer hover:text-blue2"
-                  onClick={() => setRecommendedState(item.heading)}
+                  onClick={() => {
+                    setRecommendedState(item.heading);
+                    setRecommendedStates(item.heading);
+                  }}
                 >
                   {item.heading}
                 </h1>
