@@ -3,12 +3,13 @@ import { Eye, ThumbsUp } from 'lucide-react';
 import React, { useState } from 'react'
 import { data } from '../../data/content/images';
 import PopupSign from '../Footer/PopupSign';
+// import AddData from '../../helpers/AddData';
 const ContentCard=(item)=>{
 return (
   <div className="flex flex-col gap-1 w-[22rem]">
     <div className="flex">
       <img
-        src={item.images[0]}
+        src={item.images[Math.random() * item.images.length | 0]}
         alt="random"
         className="rounded-md w-[24rem] h-[16rem] object-cover"
         width={400}
@@ -56,6 +57,7 @@ const Content = () => {
         ))}
       </div>
       {signupActive && <PopupSign />}
+      {/* <AddData /> */}
     </div>
   );
 }

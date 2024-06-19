@@ -97,7 +97,7 @@ const Navbar = () => {
                 </div>
                 {Navbar2[item].dropdown && hireFreelancersHover && (
                   <ul
-                    className="absolute top-full left-0 bg-white shadow-md py-4 rounded w-[15rem]"
+                    className="absolute top-full left-0 bg-white shadow-md py-4 rounded w-[15rem] z-20"
                     onMouseEnter={() => setHireFreelancersHover(true)}
                     onMouseLeave={() => setHireFreelancersHover(false)}
                   >
