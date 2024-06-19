@@ -3,7 +3,7 @@ import { Facebook, Linkedin, Twitter } from 'lucide-react';
 import Copyright from './Copyright';
 const Footer = () => {
   return (
-    <div className="bg-[#191919] flex flex-col  text-white1 p-[5rem]">
+    <div className="bg-[#191919] flex flex-col  text-white1 px-[3.5rem] pt-[5rem] pb-[2rem]">
       <div className="flex justify-between">
         <div className="flex w-[10em] h-fit">
           <svg
@@ -96,7 +96,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className='bg-gray-500 h-[.2px] w-full mt-[5rem] border-none' />
+      <hr className='bg-gray-500 h-[.2px] w-full mt-[5rem] border-none mb-[2rem]' />
       <Copyright />
     </div>
   );
