@@ -8,8 +8,8 @@ const PopupSign = () => {
       <div className="flex flex-col gap-3 justify-center items-center">
         <div className="flex">
           <h1 className="flex font-semibold">
-            <h1 className="underline">Sign up</h1> &nbsp;or&nbsp;{" "}
-            <h1 className="underline">Sign in</h1>to your account to view more
+            <span className="underline">Sign up</span> &nbsp;or&nbsp;{" "}
+            <span className="underline">Sign in</span>to your account to view more
             work personalized to your preferences.
           </h1>
         </div>

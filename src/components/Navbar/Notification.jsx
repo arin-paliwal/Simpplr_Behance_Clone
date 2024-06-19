@@ -11,7 +11,7 @@ const NotificationItem = ({
   subdescription,
   posted,
 }) => (
-  <div className="flex p-3 tracking-tight leading-5">
+  <div className="flex p-3 tracking-tight leading-5 cursor-pointer hover:bg-blue-50 transform duration-300">
     <div className="flex">
       <div className="flex w-[5rem] h-[5rem]">
         <img

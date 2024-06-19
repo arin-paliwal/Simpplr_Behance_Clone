@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
           <div className="flex justify-between items-center gap-5">
             {Object.keys(Navbar1).map((item, index) => (
-              <div key={index} className="flex flex-col gap-2 relative">
+              <div key={index} className="flex flex-col gap-2 relative z-20">
                 <div
                   className="flex gap-1 items-center"
                   onMouseEnter={() =>
