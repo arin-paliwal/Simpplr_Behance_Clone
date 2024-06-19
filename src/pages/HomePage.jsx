@@ -7,7 +7,7 @@ import Copyright from '../components/Footer/Copyright'
 
 const HomePage = () => {
   return (
-    <div className='px-4 py-2'>
+    <div className='px-6 py-2 flex flex-col gap-4'>
         <Navbar />
         <Search />
         <Content />
