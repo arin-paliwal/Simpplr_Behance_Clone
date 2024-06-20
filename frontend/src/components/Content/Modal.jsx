@@ -19,9 +19,9 @@ const Modal = () => {
               />
             </div>
             <div className="flex flex-col text-white ">
-              <div className="flex font-bold">{item.image_name}</div>
+              <div className="flex font-bold">{item.imageTitle}</div>
               <div className="flex font-semibold gap-2">
-                <h1>{item.creator_name}</h1>
+                <h1>{item.creatorName}</h1>
                 <h1>•</h1>
                 <h1>Follow</h1>
               </div>
@@ -56,7 +56,9 @@ const Modal = () => {
                   />
                 </div>
                 <div className="flex justify-center">
-                  <h1 className="text-sm text-white sm:text-gray-400 font-semibold">Share</h1>
+                  <h1 className="text-sm text-white sm:text-gray-400 font-semibold">
+                    Share
+                  </h1>
                 </div>
               </div>
               <div className="flex flex-col gap-1">
@@ -94,7 +96,9 @@ const Modal = () => {
                   </svg>
                 </div>
                 <div className="flex justify-center">
-                  <h1 className="text-sm text-white sm:text-gray-400 font-semibold">Save</h1>
+                  <h1 className="text-sm text-white sm:text-gray-400 font-semibold">
+                    Save
+                  </h1>
                 </div>
               </div>
               <div className="flex flex-col gap-1 ">
@@ -117,7 +121,9 @@ const Modal = () => {
                   </svg>
                 </div>
                 <div className="flex justify-center">
-                  <h1 className="text-sm text-white sm:text-gray-400 font-semibold">Share</h1>
+                  <h1 className="text-sm text-white sm:text-gray-400 font-semibold">
+                    Share
+                  </h1>
                 </div>
               </div>
               <div className="flex flex-col gap-1">
@@ -130,9 +136,7 @@ const Modal = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0.5 0.5 16 16"
-                    className={`like-button ${
-                      liked ? "liked" : ""
-                    }`}
+                    className={`like-button ${liked ? "liked" : ""}`}
                   >
                     <path fill="none" d="M.5.5h16v16H.5z"></path>
                     <path

@@ -11,12 +11,16 @@ const ContentCard = (item) => {
   const {openModal, setOpenModal} = useAppState(false);
   return (
     <div className="flex flex-col gap-1 ">
-      <div className="flex vignette"
-      onClick={() => {setOpenModal(true);localStorage.setItem("item", JSON.stringify(item));}}
+      <div
+        className="flex vignette"
+        onClick={() => {
+          setOpenModal(true);
+          localStorage.setItem("item", JSON.stringify(item));
+        }}
       >
         <img
-          src={item.images[Math.random() * item.images.length | 0]}
-          // src={item.images[0]}
+          // src={item.images[(Math.random() * item.images.length) | 0]}
+          src={item.images[0]}
           alt="random"
           className="rounded-md w-[22rem] h-[16rem] object-cover"
           width={400}
@@ -26,7 +30,7 @@ const ContentCard = (item) => {
       <div className="flex flex-col">
         <div className="flex justify-between">
           <div className="flex">
-            <h1 className="font-bold">{item.image_name}</h1>
+            <h1 className="font-bold">{item.imageTitle}</h1>
           </div>
           <div className="flex gap-3 text-sm">
             <div className="flex gap-1 items-center">
@@ -49,7 +53,7 @@ const ContentCard = (item) => {
         </div>
         <div className="flex">
           <h1 className="text-sm text-gray-500 mt-[-2px]">
-            {item.creator_name}
+            {item.creatorName}
           </h1>
         </div>
       </div>
