@@ -90,7 +90,13 @@ const Content = () => {
   const { openModal, setOpenModal } = useAppState(false);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`${HOST}cards/all`);
+      const response = await fetch(`${HOST}cards/all`,{
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        }
+      });
       if(response.ok){
         const data = await response.json();
         setCardsData(data.properties);
