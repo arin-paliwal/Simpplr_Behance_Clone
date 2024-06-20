@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Eye, ThumbsUp } from "lucide-react";
+import { Eye, Folder, FolderClosed, ThumbsUp } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { data } from "../../data/content/images";
 import PopupSign from "../Footer/PopupSign";
@@ -7,12 +7,18 @@ import { useAppState } from "../../context/Context";
 import Modal from "./Modal";
 import { HOST } from "../../data";
 const ContentCard = (item) => {
-  console.log(item)
   const {openModal, setOpenModal} = useAppState(false);
+  const [hoveredImage, setHoveredImage] = useState(false);
+  const onMouseEnter = () => {
+    setHoveredImage(true);
+  }
+  const onMouseLeave = () => {
+    setHoveredImage(false);
+  }
   return (
-    <div className="flex flex-col gap-1 ">
+    <div className="flex flex-col gap-1">
       <div
-        className="flex vignette"
+        className="flex vignette relative"
         onClick={() => {
           setOpenModal(true);
           localStorage.setItem("item", JSON.stringify(item));
@@ -25,7 +31,22 @@ const ContentCard = (item) => {
           className="rounded-md w-[22rem] h-[16rem] object-cover"
           width={400}
           height={400}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
         />
+        {hoveredImage && (
+          <div
+          onMouseEnter={onMouseEnter}
+            className="font-bold absolute top-2 left-2 z-10 flex justify-center items-center
+          w-[5.5rem] text-sm text-white bg-gray-800 rounded-2xl
+          "
+          >
+            <button className="p-2 rounded-full flex items-center justify-center gap-2">
+              <FolderClosed size={16} className="" />
+              <h1>Save</h1>
+            </button>
+          </div>
+        )}
       </div>
       <div className="flex flex-col">
         <div className="flex justify-between">
@@ -59,6 +80,7 @@ const ContentCard = (item) => {
       </div>
     </div>
   );
+
 };
 const Content = () => {
   const [signupActive, setSignupActive] = useState(true);
@@ -73,7 +95,6 @@ const Content = () => {
         const data = await response.json();
         setCardsData(data.properties);
         setOriginalData(data.properties);
-        console.log(data.properties)
       }
     }
     fetchData();
