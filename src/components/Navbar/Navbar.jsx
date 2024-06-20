@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import behance_logo from "../../assets/images/Behance-Logo.png";
 import adobe_logo from "../../assets/images/adobe.png";
 import { Navbar1 } from "../../data/navbar/Navbar1";
-import { ChevronDown, Clipboard, Info, PlusCircle, Search } from "lucide-react";
+import { ChevronDown, Clipboard, Info, Menu, PlusCircle, Search } from "lucide-react";
 import { Navbar2 } from './../../data/navbar/Navbar2';
 import Notifications from "./Notification";
 import LogIn from "./LogIn";
@@ -14,12 +14,15 @@ const Navbar = () => {
 
   return (
     <div className="flex flex-col gap-1">
-      <div className="flex flex-row gap-4 items-center">
-        <div className="flex w-[30%] items-center gap-5">
+      <div className="flex flex-row gap-4 items-center justify-between">
+        <div className="sm:hidden flex gap-4">
+          <Menu size={20} />
+        </div>
+        <div className="flex w-[30%] items-center gap-5 sm:ml-0 ml-[-4rem]">
           <div className="flex mt-[-2px]">
             <img src={behance_logo} alt="behance-logo" width={80} height={80} />
           </div>
-          <div className="flex justify-between items-center gap-5">
+          <div className="sm:flex hidden justify-between items-center gap-5">
             {Object.keys(Navbar1).map((item, index) => (
               <div key={index} className="flex flex-col gap-2 relative z-20">
                 <div
@@ -74,8 +77,8 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <hr className="w-[1px] h-[30px] bg-gray-300" />
-        <div className="flex w-[70%] justify-between items-center">
+        <hr className="sm:flex hidden w-[1px] h-[30px] bg-gray-300" />
+        <div className="sm:flex hidden w-[70%] justify-between items-center">
           <div className="flex">
             {Object.keys(Navbar2).map((item, index) => (
               <div key={index} className="flex flex-col gap-2 relative">
@@ -155,8 +158,16 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        <div className="sm:hidden flex items-center gap-4 ">
+          <div className="flex gap-4">
+            <Notifications />
+          </div>
+          <div className="flex gap-4 ">
+            <Search size={20} strokeWidth="2.5px" />
+          </div>
+        </div>
       </div>
-      <hr className="w-full h-[1px] bg-gray-800" />
+      <hr className="sm:flex hidden w-full h-[1px] bg-gray-800" />
     </div>
   );
 };

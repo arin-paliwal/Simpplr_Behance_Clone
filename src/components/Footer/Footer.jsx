@@ -4,7 +4,7 @@ import Copyright from './Copyright';
 const Footer = () => {
   return (
     <div className="bg-[#191919] flex flex-col  text-white1 px-[3.5rem] pt-[5rem] pb-[2rem]">
-      <div className="flex justify-between">
+      <div className="flex sm:flex-row flex-col justify-between">
         <div className="flex w-[10em] h-fit">
           <svg
             xmlns="http://www.w3.org/2000/svg"

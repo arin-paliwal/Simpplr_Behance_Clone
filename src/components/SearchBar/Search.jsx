@@ -68,8 +68,8 @@ const Search = () => {
 
   return (
     <div className="flex flex-col gap-1">
-      <div className="flex gap-4 items-center">
-        <div className="flex gap-2 hover:bg-gray-100 cursor-pointer duration-300 transform border p-3 justify-center items-center rounded-full w-[8rem]">
+      <div className="flex sm:flex-row flex-col gap-4 items-center">
+        <div className="flex gap-2 hover:bg-gray-100 cursor-pointer duration-300 transform border p-3 justify-center items-center rounded-full sm:w-[8rem] w-full">
           <SlidersHorizontal size={17} className="text-gray-500" />
           <h1 className="font-semibold">Filter</h1>
         </div>
@@ -97,7 +97,7 @@ const Search = () => {
             />
           </div>
           {!searchQuery && !searchSuggestionModalOpen && (
-            <div className="flex gap-2 border bg-white w-[12rem] justify-center p-2 rounded-full mr-1 items-center">
+            <div className="sm:flex hidden gap-2 border bg-white w-[12rem] justify-center p-2 rounded-full mr-1 items-center">
               <Image size={20} className="text-gray-500" />
               <h1 className="font-semibold">Search by Image</h1>
             </div>
@@ -125,7 +125,7 @@ const Search = () => {
           )}
         </div>
         <div
-          className="flex hover:border-black cursor-pointer gap-2 border-2 transform duration-300 p-3 justify-center items-center rounded-full w-[15rem]"
+          className="sm:flex hidden hover:border-black cursor-pointer gap-2 border-2 transform duration-300 p-3 justify-center items-center rounded-full w-[15rem]"
           onClick={() => setRecommendedModalOpen(!recommendedModalOpen)}
           ref={trigger}
         >
