@@ -7,6 +7,7 @@ const AppContext = createContext(undefined);
 export function AppProvider({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [recommendedStates, setRecommendedStates] = useState("");
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <AppContext.Provider
@@ -15,6 +16,8 @@ export function AppProvider({ children }) {
         setSidebarOpen,
         recommendedStates,
         setRecommendedStates,
+        openModal,
+        setOpenModal,
       }}
     >
       {children}

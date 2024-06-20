@@ -4,10 +4,14 @@ import React, { useEffect, useState } from "react";
 import { data } from "../../data/content/images";
 import PopupSign from "../Footer/PopupSign";
 import { useAppState } from "../../context/Context";
+import Modal from "./Modal";
 const ContentCard = (item) => {
+  const {openModal, setOpenModal} = useAppState(false);
   return (
-    <div className="flex flex-col gap-1">
-      <div className="flex">
+    <div className="flex flex-col gap-1 ">
+      <div className="flex vignette"
+      onClick={() => {setOpenModal(true);localStorage.setItem("item", JSON.stringify(item));}}
+      >
         <img
           // src={item.images[Math.random() * item.images.length | 0]}
           src={item.images[0]}
@@ -54,6 +58,7 @@ const Content = () => {
   const [signupActive, setSignupActive] = useState(true);
   const { recommendedStates, setRecommendedStates } = useAppState("");
   const [Cardsdata, setCardsData] = useState(data);
+  const { openModal, setOpenModal } = useAppState(false);
   useEffect(() => {
     if (recommendedStates !== "") {
       const filtered = data.filter((item) =>
@@ -65,14 +70,21 @@ const Content = () => {
     }
   }, [recommendedStates]);
   return (
-    <div className="flex flex-col gap-8">
-      <div className="flex flex-wrap gap-4">
-        {Cardsdata.map((item, index) => (
-          <ContentCard key={index} {...item} />
-        ))}
+    <>
+      <div className={`flex flex-col gap-8`}>
+        <div className="flex flex-wrap gap-4">
+          {Cardsdata.map((item, index) => (
+            <ContentCard key={index} {...item} />
+          ))}
+        </div>
+        {signupActive && <PopupSign />}
+        {openModal && 
+        <div className="flex relative top-0 right-0">
+          <Modal/>
+          </div>
+          }
       </div>
-      {signupActive && <PopupSign />}
-    </div>
+    </>
   );
 };
 
