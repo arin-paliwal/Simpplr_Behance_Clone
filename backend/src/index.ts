@@ -14,7 +14,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://simpplr-behance-clone.vercel.app/",
+      "https://simpplr-behance-clone.vercel.app",
     ],
   })
 );
