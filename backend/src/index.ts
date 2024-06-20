@@ -21,5 +21,5 @@ app.use('/api/auth', authRoutes);
 app.use('/api/cards', cardRoutes);
 
 app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
+    console.log(`Server is running at PORT http://localhost:${port}`);
 });
