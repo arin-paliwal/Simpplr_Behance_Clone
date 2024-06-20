@@ -45,8 +45,8 @@ const Modal = () => {
               height={400}
             />
           ))}
-          <div className="absolute right-5 z-30 top-[7rem] shadow-lg py-4 rounded h-[35rem]">
-            <div className="flex flex-col gap-4">
+          <div className="absolute bottom-0 sm:right-5 z-30 shadow-lg py-4 rounded sm:h-[35rem]">
+            <div className="flex sm:flex-col flex-row gap-4 justify-center">
               <div className="flex flex-col gap-1 ">
                 <div className="flex bg-white w-12 h-12 cursor-pointer rounded-full ">
                   <img
@@ -56,7 +56,7 @@ const Modal = () => {
                   />
                 </div>
                 <div className="flex justify-center">
-                  <h1 className="text-sm text-gray-400 font-semibold">Share</h1>
+                  <h1 className="text-sm text-white sm:text-gray-400 font-semibold">Share</h1>
                 </div>
               </div>
               <div className="flex flex-col gap-1">
@@ -73,7 +73,7 @@ const Modal = () => {
                   </svg>
                 </div>
                 <div className="flex">
-                  <h1 className="text-sm text-gray-400 font-semibold">
+                  <h1 className="text-sm text-white sm:text-gray-400 font-semibold">
                     Message
                   </h1>
                 </div>
@@ -94,7 +94,7 @@ const Modal = () => {
                   </svg>
                 </div>
                 <div className="flex justify-center">
-                  <h1 className="text-sm text-gray-400 font-semibold">Save</h1>
+                  <h1 className="text-sm text-white sm:text-gray-400 font-semibold">Save</h1>
                 </div>
               </div>
               <div className="flex flex-col gap-1 ">
@@ -117,7 +117,7 @@ const Modal = () => {
                   </svg>
                 </div>
                 <div className="flex justify-center">
-                  <h1 className="text-sm text-gray-400 font-semibold">Share</h1>
+                  <h1 className="text-sm text-white sm:text-gray-400 font-semibold">Share</h1>
                 </div>
               </div>
               <div className="flex flex-col gap-1">
@@ -142,7 +142,7 @@ const Modal = () => {
                   </svg>
                 </div>
                 <div className="flex justify-center">
-                  <h1 className="text-sm text-gray-400 font-semibold">
+                  <h1 className="text-sm sm:text-gray-400 font-semibold text-white">
                     {liked ? "Liked" : "Like"}
                   </h1>
                 </div>
