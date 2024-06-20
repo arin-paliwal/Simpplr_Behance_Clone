@@ -85,8 +85,8 @@ const ContentCard = (item) => {
 const Content = () => {
   const [signupActive, setSignupActive] = useState(true);
   const { recommendedStates, setRecommendedStates } = useAppState("");
-  const [Cardsdata, setCardsData] = useState([]);
-  const [originalData, setOriginalData] = useState([]);
+  const [Cardsdata, setCardsData] = useState(data);
+  const [originalData, setOriginalData] = useState(data);
   const { openModal, setOpenModal } = useAppState(false);
   useEffect(() => {
     const fetchData = async () => {
@@ -108,7 +108,7 @@ const Content = () => {
       );
       setCardsData(filtered.map((item) => item));
     } else {
-      setCardsData(data.map((item) => item));
+      setCardsData(originalData.map((item) => item));
     }
   }, [recommendedStates]);
   return (
