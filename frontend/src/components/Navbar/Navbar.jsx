@@ -23,7 +23,7 @@ const Navbar = () => {
           <div className="flex mt-[-2px]">
             <img src={behance_logo} alt="behance-logo" width={80} height={80} />
           </div>
-          <div className="sm:flex hidden justify-between items-center gap-5">
+          <div className="lg:flex hidden justify-between items-center gap-5">
             {Object.keys(Navbar1).map((item, index) => (
               <div key={index} className="flex flex-col gap-2 relative z-20">
                 <div
@@ -50,7 +50,7 @@ const Navbar = () => {
                   >
                     <div className="flex flex-col gap-2">
                       <div className="flex flex-col ml-6 gap-1 text-[0.95rem]">
-                        <h1 className="font-semibold text-blue1">
+                        <h1 className="font-bold text-blue1">
                           Search & Explore
                         </h1>
                         <h1 className="font-semibold cursor-pointer hover:text-blue1">

@@ -91,8 +91,8 @@ const Modal = () => {
               height={400}
             />
           ))}
-          <div className="absolute bottom-0 sm:right-5 z-30 shadow-lg py-4 rounded sm:h-[35rem]">
-            <div className="flex sm:flex-col flex-row gap-4 justify-center">
+          <div className="absolute right-5 z-30 shadow-lg py-4 rounded h-[35rem]">
+            <div className="flex flex-col gap-4 justify-center">
               <div className="flex flex-col gap-1 ">
                 <div className="flex bg-white w-12 h-12 cursor-pointer rounded-full ">
                   <img

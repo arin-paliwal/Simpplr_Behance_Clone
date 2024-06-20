@@ -78,7 +78,7 @@ const Notifications = () => {
           onMouseLeave={handleMouseLeave}
           ref={dropdown}
           id="dropdownNotification"
-          className="z-20 flex flex-col absolute right-[16rem]  w-full max-w-[26rem] bg-white divide-y divide-gray-100 rounded-md shadow-xl shadow-gray-500 border"
+          className="z-20 flex flex-col absolute md:right-[16rem] right-0  w-full max-w-[26rem] bg-white divide-y divide-gray-100 rounded-md shadow-xl shadow-gray-500 border"
           aria-labelledby="dropdownNotificationButton "
         >
           <div className="block px-4 py-3 text-center rounded-t-lg font-bold text-[1.1rem]">
