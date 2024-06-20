@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Bell } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import proLogo from "../../assets/logos/pro.png";
