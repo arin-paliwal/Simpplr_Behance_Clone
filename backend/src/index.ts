@@ -8,6 +8,7 @@ import morgan from 'morgan';
 import cardRoutes from "./routes/cardRoutes";
 dotenv.config();
 const app = express();
+const host = "0.0.0.0";
 app.use(express.json());
 app.use(
   cors({
@@ -17,7 +18,7 @@ app.use(
     ],
   })
 );
-const port = process.env.PORT || 3000;
+const port = parseInt(process.env.PORT || '3000', 10);
 app.get('/', (req: Request, res: Response) => {
     res.status(200).json({
         message: 'Hello World',
@@ -27,6 +28,6 @@ app.use(morgan('tiny'));
 app.use('/api/auth', authRoutes);
 app.use('/api/cards', cardRoutes);
 
-app.listen(port, () => {
-    console.log(`Server is running at PORT http://localhost:${port}`);
+app.listen(port,host, () => {
+    console.log(`Server is running at PORT http://${host}:${port}`);
 });
