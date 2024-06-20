@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: "*",
+    credentials: true,
   })
 );
 // const port = parseInt(process.env.PORT || '80', 10);
