@@ -16,6 +16,8 @@ app.use(
       "http://localhost:5173",
       "https://simpplr-behance-clone.vercel.app",
     ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 // const port = parseInt(process.env.PORT || '80', 10);
