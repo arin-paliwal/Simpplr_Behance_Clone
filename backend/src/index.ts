@@ -9,7 +9,14 @@ import cardRoutes from "./routes/cardRoutes";
 dotenv.config();
 const app = express();
 app.use(express.json());
-app.use(cors({origin: "http://localhost:5173"}))
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://simpplr-behance-clone.vercel.app/",
+    ],
+  })
+);
 const port = process.env.PORT || 3000;
 app.get('/', (req: Request, res: Response) => {
     res.status(200).json({
