@@ -11,7 +11,7 @@ const NotificationItem = ({
   subdescription,
   posted,
 }) => (
-  <div className="flex p-3 tracking-tight leading-5 cursor-pointer hover:bg-blue-50 transform duration-300">
+  <div className="flex p-2 tracking-tight leading-5 cursor-pointer hover:bg-blue-50 transform duration-300 rounded-md">
     <div className="flex">
       <div className="flex w-[5rem] h-[5rem]">
         <img
@@ -28,7 +28,7 @@ const NotificationItem = ({
       <div className="flex">
         <h1 className="">{description}</h1>
       </div>
-      <div className="flex items-center mt-2 gap-3 text-sm">
+      <div className="flex items-center mt-2 gap-3 text-sm border p-4 rounded-xl">
         <div className="flex">
           <img src={proLogo} alt="pro-logo" className="w-[6rem] h-[5rem] rounded-md" />
         </div>
@@ -36,6 +36,9 @@ const NotificationItem = ({
           <h1 className="font-semibold">{subheading}</h1>
           <button className="text-blue-500 border w-fit px-3 py-1 font-bold bg-blue-50 rounded-2xl">{subdescription}</button>
         </div>
+      </div>
+      <div className="flex mt-[-6px]">
+        <h1 className="text-gray-500 text-sm">{posted}</h1>
       </div>
     </div>
   </div>
@@ -74,13 +77,13 @@ const Notifications = () => {
           onMouseLeave={handleMouseLeave}
           ref={dropdown}
           id="dropdownNotification"
-          className="z-20 flex flex-col absolute right-[3rem] w-full max-w-[26rem] bg-white divide-y divide-gray-100 rounded-lg shadow"
-          aria-labelledby="dropdownNotificationButton"
+          className="z-20 flex flex-col absolute right-[16rem]  w-full max-w-[26rem] bg-white divide-y divide-gray-100 rounded-md shadow-xl shadow-gray-500 border"
+          aria-labelledby="dropdownNotificationButton "
         >
-          <div className="block px-4 py-3 font-medium text-center text-gray-700 rounded-t-lg ">
+          <div className="block px-4 py-3 text-center rounded-t-lg font-bold text-[1.1rem]">
             Your Notifications
           </div>
-          <div className=" overflow-y-auto componentScroll max-h-[30rem] z-10 divide-gray-100 backdrop-filter backdrop-blur-lg">
+          <div className="overflow-y-auto max-h-[30rem] z-10 backdrop-filter backdrop-blur-lg rounded-bl-md">
             {notificationsData.map((item, index) => (
               <NotificationItem key={index} {...item} />
             ))}

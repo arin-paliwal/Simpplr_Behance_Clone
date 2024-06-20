@@ -16,7 +16,7 @@ const ContentCard = (item) => {
           // src={item.images[Math.random() * item.images.length | 0]}
           src={item.images[0]}
           alt="random"
-          className="rounded-md w-[24rem] h-[16rem] object-cover"
+          className="rounded-md w-[22rem] h-[16rem] object-cover"
           width={400}
           height={400}
         />

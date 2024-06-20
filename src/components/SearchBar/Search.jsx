@@ -76,7 +76,7 @@ const Search = () => {
         <div
           className={`flex ${
             searchSuggestionModalOpen
-              ? "rounded-t-2xl bg-white shadow-lg"
+              ? "rounded-t-2xl border bg-white shadow-2xl"
               : "rounded-full bg-[#f9f9f9]"
           }  w-full items-center relative`}
         >
