@@ -7,6 +7,7 @@ import { Navbar2 } from './../../data/navbar/Navbar2';
 import Notifications from "./Notification";
 import LogIn from "./LogIn";
 import SignUp from "./SignUp";
+import Adobe from "./Adobe";
 
 const Navbar = () => {
   const [exploreHover, setExploreHover] = useState(false);
@@ -150,12 +151,13 @@ const Navbar = () => {
             <Notifications />
             <LogIn />
             <SignUp />
-            <div className="flex">
+            {/* <div className="flex">
               <button className="flex gap-1 items-center">
                 <img src={adobe_logo} alt="adobe-logo" width={20} height={20} />
                 <h1 className="font-bold cursor-pointer">Adobe</h1>
               </button>
-            </div>
+            </div> */}
+            <Adobe />
           </div>
         </div>
         <div className="sm:hidden flex items-center gap-4 ">
