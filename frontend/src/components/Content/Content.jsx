@@ -92,10 +92,6 @@ const Content = () => {
     const fetchData = async () => {
       const response = await fetch(`${HOST}cards/all`,{
         method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
       });
       if(response.ok){
         const data = await response.json();
