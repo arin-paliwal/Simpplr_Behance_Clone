@@ -1,9 +1,9 @@
 export const data = [
     {
         "image-array": [],
-        "image_name": "Modern Abstract Shapes",
-        "creator_name": "John Doe",
-        "like": true,
+        "imageTitle": "Modern Abstract Shapes",
+        "creatorName": "John Doe",
+        
         "likes": 3421,
         "views": 7824,
         "sort_by": "Most Discussed",
@@ -71,9 +71,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Elegant Serif Fonts",
-        "creator_name": "Jane Smith",
-        "like": false,
+        "imageTitle": "Elegant Serif Fonts",
+        "creatorName": "Jane Smith",
+        
         "likes": 231,
         "views": 564,
         "sort_by": "Recommended",
@@ -124,9 +124,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Geometric Patterns",
-        "creator_name": "David Brown",
-        "like": true,
+        "imageTitle": "Geometric Patterns",
+        "creatorName": "David Brown",
+        
         "likes": 980,
         "views": 1587,
         "sort_by": "Most Followed",
@@ -175,9 +175,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vibrant Typography",
-        "creator_name": "Emily Johnson",
-        "like": true,
+        "imageTitle": "Vibrant Typography",
+        "creatorName": "Emily Johnson",
+        
         "likes": 654,
         "views": 1234,
         "sort_by": "Curated",
@@ -226,9 +226,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Minimalist Posters",
-        "creator_name": "Michael Lee",
-        "like": false,
+        "imageTitle": "Minimalist Posters",
+        "creatorName": "Michael Lee",
+        
         "likes": 102,
         "views": 345,
         "sort_by": "Most Viewed",
@@ -277,9 +277,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Bright Color Palettes",
-        "creator_name": "Sophia Garcia",
-        "like": true,
+        "imageTitle": "Bright Color Palettes",
+        "creatorName": "Sophia Garcia",
+        
         "likes": 874,
         "views": 1978,
         "sort_by": "Most Recent",
@@ -328,9 +328,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Neon Glows",
-        "creator_name": "Daniel Wilson",
-        "like": false,
+        "imageTitle": "Neon Glows",
+        "creatorName": "Daniel Wilson",
+        
         "likes": 531,
         "views": 1321,
         "sort_by": "Most Discussed",
@@ -378,9 +378,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Pastel Patterns",
-        "creator_name": "Olivia Brown",
-        "like": true,
+        "imageTitle": "Pastel Patterns",
+        "creatorName": "Olivia Brown",
+        
         "likes": 762,
         "views": 2345,
         "sort_by": "Recommended",
@@ -429,9 +429,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Monochrome Textures",
-        "creator_name": "Ethan Martinez",
-        "like": false,
+        "imageTitle": "Monochrome Textures",
+        "creatorName": "Ethan Martinez",
+        
         "likes": 412,
         "views": 987,
         "sort_by": "Most Followed",
@@ -479,9 +479,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Floral Vectors",
-        "creator_name": "Ava Taylor",
-        "like": true,
+        "imageTitle": "Floral Vectors",
+        "creatorName": "Ava Taylor",
+        
         "likes": 1568,
         "views": 3765,
         "sort_by": "Curated",
@@ -529,9 +529,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Retro Graphics",
-        "creator_name": "William Clark",
-        "like": true,
+        "imageTitle": "Retro Graphics",
+        "creatorName": "William Clark",
+        
         "likes": 874,
         "views": 1978,
         "sort_by": "Most Recent",
@@ -579,9 +579,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Illustrations",
-        "creator_name": "Liam King",
-        "like": true,
+        "imageTitle": "Vintage Illustrations",
+        "creatorName": "Liam King",
+        
         "likes": 1850,
         "views": 4120,
         "sort_by": "Most Discussed",
@@ -649,9 +649,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Futuristic UI Kit",
-        "creator_name": "Ella White",
-        "like": true,
+        "imageTitle": "Futuristic UI Kit",
+        "creatorName": "Ella White",
+        
         "likes": 1290,
         "views": 3290,
         "sort_by": "Recommended",
@@ -703,9 +703,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Elegant Invitation Cards",
-        "creator_name": "James Turner",
-        "like": true,
+        "imageTitle": "Elegant Invitation Cards",
+        "creatorName": "James Turner",
+        
         "likes": 1780,
         "views": 4021,
         "sort_by": "Most Followed",
@@ -754,9 +754,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Bohemian Pattern Set",
-        "creator_name": "Emma Thompson",
-        "like": true,
+        "imageTitle": "Bohemian Pattern Set",
+        "creatorName": "Emma Thompson",
+        
         "likes": 1590,
         "views": 3420,
         "sort_by": "Curated",
@@ -805,9 +805,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Classic Logo Collection",
-        "creator_name": "Mason Scott",
-        "like": false,
+        "imageTitle": "Classic Logo Collection",
+        "creatorName": "Mason Scott",
+        
         "likes": 450,
         "views": 890,
         "sort_by": "Most Viewed",
@@ -856,9 +856,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Colorful Gradients",
-        "creator_name": "Aiden Martinez",
-        "like": true,
+        "imageTitle": "Colorful Gradients",
+        "creatorName": "Aiden Martinez",
+        
         "likes": 1750,
         "views": 3810,
         "sort_by": "Most Recent",
@@ -907,9 +907,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Hand-drawn Icons",
-        "creator_name": "Sophia Walker",
-        "like": true,
+        "imageTitle": "Hand-drawn Icons",
+        "creatorName": "Sophia Walker",
+        
         "likes": 1620,
         "views": 3500,
         "sort_by": "Most Discussed",
@@ -957,9 +957,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Minimal Line Art",
-        "creator_name": "Isabella Young",
-        "like": true,
+        "imageTitle": "Minimal Line Art",
+        "creatorName": "Isabella Young",
+        
         "likes": 1480,
         "views": 3100,
         "sort_by": "Recommended",
@@ -1008,9 +1008,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Watercolor Backgrounds",
-        "creator_name": "Alexander Wright",
-        "like": true,
+        "imageTitle": "Watercolor Backgrounds",
+        "creatorName": "Alexander Wright",
+        
         "likes": 1540,
         "views": 3280,
         "sort_by": "Most Followed",
@@ -1058,9 +1058,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Geometric Patterns",
-        "creator_name": "Charlotte Baker",
-        "like": false,
+        "imageTitle": "Geometric Patterns",
+        "creatorName": "Charlotte Baker",
+        
         "likes": 560,
         "views": 980,
         "sort_by": "Most Discussed",
@@ -1126,9 +1126,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Abstract Artwork Collection",
-        "creator_name": "Oliver Harris",
-        "like": true,
+        "imageTitle": "Abstract Artwork Collection",
+        "creatorName": "Oliver Harris",
+        
         "likes": 1980,
         "views": 4320,
         "sort_by": "Recommended",
@@ -1179,9 +1179,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Nature-Inspired Illustrations",
-        "creator_name": "Luna Rodriguez",
-        "like": true,
+        "imageTitle": "Nature-Inspired Illustrations",
+        "creatorName": "Luna Rodriguez",
+        
         "likes": 1750,
         "views": 3900,
         "sort_by": "Most Followed",
@@ -1230,9 +1230,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Typography Pack",
-        "creator_name": "Lucas Martin",
-        "like": false,
+        "imageTitle": "Vintage Typography Pack",
+        "creatorName": "Lucas Martin",
+        
         "likes": 530,
         "views": 1100,
         "sort_by": "Curated",
@@ -1281,9 +1281,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Modern Web UI Elements",
-        "creator_name": "Aria Wilson",
-        "like": true,
+        "imageTitle": "Modern Web UI Elements",
+        "creatorName": "Aria Wilson",
+        
         "likes": 1670,
         "views": 3800,
         "sort_by": "Most Viewed",
@@ -1332,9 +1332,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Grunge Texture Pack",
-        "creator_name": "Nathan Allen",
-        "like": true,
+        "imageTitle": "Grunge Texture Pack",
+        "creatorName": "Nathan Allen",
+        
         "likes": 1430,
         "views": 3120,
         "sort_by": "Most Recent",
@@ -1383,9 +1383,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Abstract Background Collection",
-        "creator_name": "Ethan Wright",
-        "like": false,
+        "imageTitle": "Abstract Background Collection",
+        "creatorName": "Ethan Wright",
+        
         "likes": 490,
         "views": 920,
         "sort_by": "Most Followed",
@@ -1433,9 +1433,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Logo Set",
-        "creator_name": "Ella Thompson",
-        "like": true,
+        "imageTitle": "Vintage Logo Set",
+        "creatorName": "Ella Thompson",
+        
         "likes": 1570,
         "views": 3540,
         "sort_by": "Curated",
@@ -1483,9 +1483,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Poster Designs",
-        "creator_name": "Noah Baker",
-        "like": true,
+        "imageTitle": "Vintage Poster Designs",
+        "creatorName": "Noah Baker",
+        
         "likes": 1600,
         "views": 3760,
         "sort_by": "Most Recent",
@@ -1533,9 +1533,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Retro Badge Collection",
-        "creator_name": "Ava Wilson",
-        "like": true,
+        "imageTitle": "Retro Badge Collection",
+        "creatorName": "Ava Wilson",
+        
         "likes": 1650,
         "views": 3880,
         "sort_by": "Most Discussed",
@@ -1583,9 +1583,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Pattern Collection",
-        "creator_name": "Olivia Martin",
-        "like": false,
+        "imageTitle": "Vintage Pattern Collection",
+        "creatorName": "Olivia Martin",
+        
         "likes": 540,
         "views": 1180,
         "sort_by": "Recommended",
@@ -1634,9 +1634,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Gothic Font Set",
-        "creator_name": "Mia Wilson",
-        "like": true,
+        "imageTitle": "Gothic Font Set",
+        "creatorName": "Mia Wilson",
+        
         "likes": 1550,
         "views": 3620,
         "sort_by": "Most Followed",
@@ -1702,9 +1702,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Retro Poster Designs",
-        "creator_name": "Jacob Baker",
-        "like": true,
+        "imageTitle": "Retro Poster Designs",
+        "creatorName": "Jacob Baker",
+        
         "likes": 1700,
         "views": 3800,
         "sort_by": "Most Discussed",
@@ -1755,9 +1755,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Label Set",
-        "creator_name": "Ethan Harris",
-        "like": true,
+        "imageTitle": "Vintage Label Set",
+        "creatorName": "Ethan Harris",
+        
         "likes": 1630,
         "views": 3700,
         "sort_by": "Recommended",
@@ -1806,9 +1806,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Modern Abstract Shapes",
-        "creator_name": "John Doe",
-        "like": true,
+        "imageTitle": "Modern Abstract Shapes",
+        "creatorName": "John Doe",
+        
         "likes": 3421,
         "views": 7824,
         "sort_by": "Most Discussed",
@@ -1876,9 +1876,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Typography",
-        "creator_name": "Jane Smith",
-        "like": true,
+        "imageTitle": "Vintage Typography",
+        "creatorName": "Jane Smith",
+        
         "likes": 2876,
         "views": 6382,
         "sort_by": "Most Discussed",
@@ -1938,9 +1938,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Nature Landscape",
-        "creator_name": "William Johnson",
-        "like": true,
+        "imageTitle": "Nature Landscape",
+        "creatorName": "William Johnson",
+        
         "likes": 4123,
         "views": 8321,
         "sort_by": "Most Discussed",
@@ -1993,9 +1993,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Digital Portrait",
-        "creator_name": "Alex Thompson",
-        "like": true,
+        "imageTitle": "Digital Portrait",
+        "creatorName": "Alex Thompson",
+        
         "likes": 3876,
         "views": 7282,
         "sort_by": "Most Discussed",
@@ -2052,9 +2052,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Abstract Oil Painting",
-        "creator_name": "Sophia Miller",
-        "like": true,
+        "imageTitle": "Abstract Oil Painting",
+        "creatorName": "Sophia Miller",
+        
         "likes": 4221,
         "views": 8931,
         "sort_by": "Most Discussed",
@@ -2107,9 +2107,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Architectural Blueprint",
-        "creator_name": "Daniel Garcia",
-        "like": true,
+        "imageTitle": "Architectural Blueprint",
+        "creatorName": "Daniel Garcia",
+        
         "likes": 3123,
         "views": 7632,
         "sort_by": "Most Discussed",
@@ -2163,9 +2163,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Retro Labels",
-        "creator_name": "Emma Wilson",
-        "like": true,
+        "imageTitle": "Vintage Retro Labels",
+        "creatorName": "Emma Wilson",
+        
         "likes": 4321,
         "views": 9123,
         "sort_by": "Most Discussed",
@@ -2222,9 +2222,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Minimalist Geometric Patterns",
-        "creator_name": "Sophie Martinez",
-        "like": true,
+        "imageTitle": "Minimalist Geometric Patterns",
+        "creatorName": "Sophie Martinez",
+        
         "likes": 5321,
         "views": 11234,
         "sort_by": "Most Discussed",
@@ -2282,9 +2282,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Botanical Illustrations",
-        "creator_name": "Lily Johnson",
-        "like": true,
+        "imageTitle": "Botanical Illustrations",
+        "creatorName": "Lily Johnson",
+        
         "likes": 4211,
         "views": 8932,
         "sort_by": "Most Discussed",
@@ -2339,9 +2339,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Urban Cityscapes",
-        "creator_name": "David Brown",
-        "like": true,
+        "imageTitle": "Urban Cityscapes",
+        "creatorName": "David Brown",
+        
         "likes": 3421,
         "views": 7824,
         "sort_by": "Most Discussed",
@@ -2393,9 +2393,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Retro Vintage Posters",
-        "creator_name": "Ella Garcia",
-        "like": true,
+        "imageTitle": "Retro Vintage Posters",
+        "creatorName": "Ella Garcia",
+        
         "likes": 3921,
         "views": 8324,
         "sort_by": "Most Discussed",
@@ -2451,9 +2451,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Abstract 3D Renders",
-        "creator_name": "Maximilian Schmidt",
-        "like": true,
+        "imageTitle": "Abstract 3D Renders",
+        "creatorName": "Maximilian Schmidt",
+        
         "likes": 4121,
         "views": 9123,
         "sort_by": "Most Discussed",
@@ -2509,9 +2509,9 @@ export const data = [
     // adding duplicate
     {
         "image-array": [],
-        "image_name": "Modern Abstract Shapes",
-        "creator_name": "John Doe",
-        "like": true,
+        "imageTitle": "Modern Abstract Shapes",
+        "creatorName": "John Doe",
+        
         "likes": 3421,
         "views": 7824,
         "sort_by": "Most Discussed",
@@ -2579,9 +2579,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Elegant Serif Fonts",
-        "creator_name": "Jane Smith",
-        "like": false,
+        "imageTitle": "Elegant Serif Fonts",
+        "creatorName": "Jane Smith",
+        
         "likes": 231,
         "views": 564,
         "sort_by": "Recommended",
@@ -2632,9 +2632,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Geometric Patterns",
-        "creator_name": "David Brown",
-        "like": true,
+        "imageTitle": "Geometric Patterns",
+        "creatorName": "David Brown",
+        
         "likes": 980,
         "views": 1587,
         "sort_by": "Most Followed",
@@ -2683,9 +2683,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vibrant Typography",
-        "creator_name": "Emily Johnson",
-        "like": true,
+        "imageTitle": "Vibrant Typography",
+        "creatorName": "Emily Johnson",
+        
         "likes": 654,
         "views": 1234,
         "sort_by": "Curated",
@@ -2734,9 +2734,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Minimalist Posters",
-        "creator_name": "Michael Lee",
-        "like": false,
+        "imageTitle": "Minimalist Posters",
+        "creatorName": "Michael Lee",
+        
         "likes": 102,
         "views": 345,
         "sort_by": "Most Viewed",
@@ -2785,9 +2785,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Bright Color Palettes",
-        "creator_name": "Sophia Garcia",
-        "like": true,
+        "imageTitle": "Bright Color Palettes",
+        "creatorName": "Sophia Garcia",
+        
         "likes": 874,
         "views": 1978,
         "sort_by": "Most Recent",
@@ -2836,9 +2836,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Neon Glows",
-        "creator_name": "Daniel Wilson",
-        "like": false,
+        "imageTitle": "Neon Glows",
+        "creatorName": "Daniel Wilson",
+        
         "likes": 531,
         "views": 1321,
         "sort_by": "Most Discussed",
@@ -2886,9 +2886,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Pastel Patterns",
-        "creator_name": "Olivia Brown",
-        "like": true,
+        "imageTitle": "Pastel Patterns",
+        "creatorName": "Olivia Brown",
+        
         "likes": 762,
         "views": 2345,
         "sort_by": "Recommended",
@@ -2937,9 +2937,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Monochrome Textures",
-        "creator_name": "Ethan Martinez",
-        "like": false,
+        "imageTitle": "Monochrome Textures",
+        "creatorName": "Ethan Martinez",
+        
         "likes": 412,
         "views": 987,
         "sort_by": "Most Followed",
@@ -2987,9 +2987,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Floral Vectors",
-        "creator_name": "Ava Taylor",
-        "like": true,
+        "imageTitle": "Floral Vectors",
+        "creatorName": "Ava Taylor",
+        
         "likes": 1568,
         "views": 3765,
         "sort_by": "Curated",
@@ -3037,9 +3037,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Retro Graphics",
-        "creator_name": "William Clark",
-        "like": true,
+        "imageTitle": "Retro Graphics",
+        "creatorName": "William Clark",
+        
         "likes": 874,
         "views": 1978,
         "sort_by": "Most Recent",
@@ -3087,9 +3087,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Illustrations",
-        "creator_name": "Liam King",
-        "like": true,
+        "imageTitle": "Vintage Illustrations",
+        "creatorName": "Liam King",
+        
         "likes": 1850,
         "views": 4120,
         "sort_by": "Most Appreciated",
@@ -3157,9 +3157,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Futuristic UI Kit",
-        "creator_name": "Ella White",
-        "like": true,
+        "imageTitle": "Futuristic UI Kit",
+        "creatorName": "Ella White",
+        
         "likes": 1290,
         "views": 3290,
         "sort_by": "Recommended",
@@ -3211,9 +3211,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Elegant Invitation Cards",
-        "creator_name": "James Turner",
-        "like": true,
+        "imageTitle": "Elegant Invitation Cards",
+        "creatorName": "James Turner",
+        
         "likes": 1780,
         "views": 4021,
         "sort_by": "Most Followed",
@@ -3262,9 +3262,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Bohemian Pattern Set",
-        "creator_name": "Emma Thompson",
-        "like": true,
+        "imageTitle": "Bohemian Pattern Set",
+        "creatorName": "Emma Thompson",
+        
         "likes": 1590,
         "views": 3420,
         "sort_by": "Curated",
@@ -3313,9 +3313,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Classic Logo Collection",
-        "creator_name": "Mason Scott",
-        "like": false,
+        "imageTitle": "Classic Logo Collection",
+        "creatorName": "Mason Scott",
+        
         "likes": 450,
         "views": 890,
         "sort_by": "Most Viewed",
@@ -3364,9 +3364,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Colorful Gradients",
-        "creator_name": "Aiden Martinez",
-        "like": true,
+        "imageTitle": "Colorful Gradients",
+        "creatorName": "Aiden Martinez",
+        
         "likes": 1750,
         "views": 3810,
         "sort_by": "Most Recent",
@@ -3415,9 +3415,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Hand-drawn Icons",
-        "creator_name": "Sophia Walker",
-        "like": true,
+        "imageTitle": "Hand-drawn Icons",
+        "creatorName": "Sophia Walker",
+        
         "likes": 1620,
         "views": 3500,
         "sort_by": "Most Appreciated",
@@ -3465,9 +3465,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Minimal Line Art",
-        "creator_name": "Isabella Young",
-        "like": true,
+        "imageTitle": "Minimal Line Art",
+        "creatorName": "Isabella Young",
+        
         "likes": 1480,
         "views": 3100,
         "sort_by": "Recommended",
@@ -3516,9 +3516,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Watercolor Backgrounds",
-        "creator_name": "Alexander Wright",
-        "like": true,
+        "imageTitle": "Watercolor Backgrounds",
+        "creatorName": "Alexander Wright",
+        
         "likes": 1540,
         "views": 3280,
         "sort_by": "Most Followed",
@@ -3566,9 +3566,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Geometric Patterns",
-        "creator_name": "Charlotte Baker",
-        "like": false,
+        "imageTitle": "Geometric Patterns",
+        "creatorName": "Charlotte Baker",
+        
         "likes": 560,
         "views": 980,
         "sort_by": "Most Appreciated",
@@ -3634,9 +3634,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Abstract Artwork Collection",
-        "creator_name": "Oliver Harris",
-        "like": true,
+        "imageTitle": "Abstract Artwork Collection",
+        "creatorName": "Oliver Harris",
+        
         "likes": 1980,
         "views": 4320,
         "sort_by": "Recommended",
@@ -3687,9 +3687,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Nature-Inspired Illustrations",
-        "creator_name": "Luna Rodriguez",
-        "like": true,
+        "imageTitle": "Nature-Inspired Illustrations",
+        "creatorName": "Luna Rodriguez",
+        
         "likes": 1750,
         "views": 3900,
         "sort_by": "Most Followed",
@@ -3738,9 +3738,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Typography Pack",
-        "creator_name": "Lucas Martin",
-        "like": false,
+        "imageTitle": "Vintage Typography Pack",
+        "creatorName": "Lucas Martin",
+        
         "likes": 530,
         "views": 1100,
         "sort_by": "Curated",
@@ -3789,9 +3789,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Modern Web UI Elements",
-        "creator_name": "Aria Wilson",
-        "like": true,
+        "imageTitle": "Modern Web UI Elements",
+        "creatorName": "Aria Wilson",
+        
         "likes": 1670,
         "views": 3800,
         "sort_by": "Most Viewed",
@@ -3840,9 +3840,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Grunge Texture Pack",
-        "creator_name": "Nathan Allen",
-        "like": true,
+        "imageTitle": "Grunge Texture Pack",
+        "creatorName": "Nathan Allen",
+        
         "likes": 1430,
         "views": 3120,
         "sort_by": "Most Recent",
@@ -3891,9 +3891,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Abstract Background Collection",
-        "creator_name": "Ethan Wright",
-        "like": false,
+        "imageTitle": "Abstract Background Collection",
+        "creatorName": "Ethan Wright",
+        
         "likes": 490,
         "views": 920,
         "sort_by": "Most Followed",
@@ -3941,9 +3941,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Logo Set",
-        "creator_name": "Ella Thompson",
-        "like": true,
+        "imageTitle": "Vintage Logo Set",
+        "creatorName": "Ella Thompson",
+        
         "likes": 1570,
         "views": 3540,
         "sort_by": "Curated",
@@ -3991,9 +3991,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Poster Designs",
-        "creator_name": "Noah Baker",
-        "like": true,
+        "imageTitle": "Vintage Poster Designs",
+        "creatorName": "Noah Baker",
+        
         "likes": 1600,
         "views": 3760,
         "sort_by": "Most Recent",
@@ -4041,9 +4041,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Retro Badge Collection",
-        "creator_name": "Ava Wilson",
-        "like": true,
+        "imageTitle": "Retro Badge Collection",
+        "creatorName": "Ava Wilson",
+        
         "likes": 1650,
         "views": 3880,
         "sort_by": "Most Appreciated",
@@ -4091,9 +4091,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Pattern Collection",
-        "creator_name": "Olivia Martin",
-        "like": false,
+        "imageTitle": "Vintage Pattern Collection",
+        "creatorName": "Olivia Martin",
+        
         "likes": 540,
         "views": 1180,
         "sort_by": "Recommended",
@@ -4142,9 +4142,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Gothic Font Set",
-        "creator_name": "Mia Wilson",
-        "like": true,
+        "imageTitle": "Gothic Font Set",
+        "creatorName": "Mia Wilson",
+        
         "likes": 1550,
         "views": 3620,
         "sort_by": "Most Followed",
@@ -4210,9 +4210,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Retro Poster Designs",
-        "creator_name": "Jacob Baker",
-        "like": true,
+        "imageTitle": "Retro Poster Designs",
+        "creatorName": "Jacob Baker",
+        
         "likes": 1700,
         "views": 3800,
         "sort_by": "Most Appreciated",
@@ -4263,9 +4263,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Label Set",
-        "creator_name": "Ethan Harris",
-        "like": true,
+        "imageTitle": "Vintage Label Set",
+        "creatorName": "Ethan Harris",
+        
         "likes": 1630,
         "views": 3700,
         "sort_by": "Recommended",
@@ -4314,9 +4314,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Modern Abstract Shapes",
-        "creator_name": "John Doe",
-        "like": true,
+        "imageTitle": "Modern Abstract Shapes",
+        "creatorName": "John Doe",
+        
         "likes": 3421,
         "views": 7824,
         "sort_by": "Most Appreciated",
@@ -4384,9 +4384,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Typography",
-        "creator_name": "Jane Smith",
-        "like": true,
+        "imageTitle": "Vintage Typography",
+        "creatorName": "Jane Smith",
+        
         "likes": 2876,
         "views": 6382,
         "sort_by": "Most Appreciated",
@@ -4446,9 +4446,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Nature Landscape",
-        "creator_name": "William Johnson",
-        "like": true,
+        "imageTitle": "Nature Landscape",
+        "creatorName": "William Johnson",
+        
         "likes": 4123,
         "views": 8321,
         "sort_by": "Most Appreciated",
@@ -4501,9 +4501,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Digital Portrait",
-        "creator_name": "Alex Thompson",
-        "like": true,
+        "imageTitle": "Digital Portrait",
+        "creatorName": "Alex Thompson",
+        
         "likes": 3876,
         "views": 7282,
         "sort_by": "Most Appreciated",
@@ -4560,9 +4560,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Abstract Oil Painting",
-        "creator_name": "Sophia Miller",
-        "like": true,
+        "imageTitle": "Abstract Oil Painting",
+        "creatorName": "Sophia Miller",
+        
         "likes": 4221,
         "views": 8931,
         "sort_by": "Most Appreciated",
@@ -4616,9 +4616,9 @@ export const data = [
     // again duplicate data
     {
         "image-array": [],
-        "image_name": "Modern Abstract Shapes",
-        "creator_name": "John Doe",
-        "like": true,
+        "imageTitle": "Modern Abstract Shapes",
+        "creatorName": "John Doe",
+        
         "likes": 3421,
         "views": 7824,
         "sort_by": "Most Appreciated",
@@ -4686,9 +4686,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Elegant Serif Fonts",
-        "creator_name": "Jane Smith",
-        "like": false,
+        "imageTitle": "Elegant Serif Fonts",
+        "creatorName": "Jane Smith",
+        
         "likes": 231,
         "views": 564,
         "sort_by": "Recommended",
@@ -4739,9 +4739,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Geometric Patterns",
-        "creator_name": "David Brown",
-        "like": true,
+        "imageTitle": "Geometric Patterns",
+        "creatorName": "David Brown",
+        
         "likes": 980,
         "views": 1587,
         "sort_by": "Most Followed",
@@ -4790,9 +4790,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vibrant Typography",
-        "creator_name": "Emily Johnson",
-        "like": true,
+        "imageTitle": "Vibrant Typography",
+        "creatorName": "Emily Johnson",
+        
         "likes": 654,
         "views": 1234,
         "sort_by": "Curated",
@@ -4841,9 +4841,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Minimalist Posters",
-        "creator_name": "Michael Lee",
-        "like": false,
+        "imageTitle": "Minimalist Posters",
+        "creatorName": "Michael Lee",
+        
         "likes": 102,
         "views": 345,
         "sort_by": "Most Viewed",
@@ -4892,9 +4892,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Bright Color Palettes",
-        "creator_name": "Sophia Garcia",
-        "like": true,
+        "imageTitle": "Bright Color Palettes",
+        "creatorName": "Sophia Garcia",
+        
         "likes": 874,
         "views": 1978,
         "sort_by": "Most Recent",
@@ -4943,9 +4943,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Neon Glows",
-        "creator_name": "Daniel Wilson",
-        "like": false,
+        "imageTitle": "Neon Glows",
+        "creatorName": "Daniel Wilson",
+        
         "likes": 531,
         "views": 1321,
         "sort_by": "Most Appreciated",
@@ -4993,9 +4993,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Pastel Patterns",
-        "creator_name": "Olivia Brown",
-        "like": true,
+        "imageTitle": "Pastel Patterns",
+        "creatorName": "Olivia Brown",
+        
         "likes": 762,
         "views": 2345,
         "sort_by": "Recommended",
@@ -5044,9 +5044,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Monochrome Textures",
-        "creator_name": "Ethan Martinez",
-        "like": false,
+        "imageTitle": "Monochrome Textures",
+        "creatorName": "Ethan Martinez",
+        
         "likes": 412,
         "views": 987,
         "sort_by": "Most Followed",
@@ -5094,9 +5094,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Floral Vectors",
-        "creator_name": "Ava Taylor",
-        "like": true,
+        "imageTitle": "Floral Vectors",
+        "creatorName": "Ava Taylor",
+        
         "likes": 1568,
         "views": 3765,
         "sort_by": "Curated",
@@ -5144,9 +5144,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Retro Graphics",
-        "creator_name": "William Clark",
-        "like": true,
+        "imageTitle": "Retro Graphics",
+        "creatorName": "William Clark",
+        
         "likes": 874,
         "views": 1978,
         "sort_by": "Most Recent",
@@ -5194,9 +5194,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Illustrations",
-        "creator_name": "Liam King",
-        "like": true,
+        "imageTitle": "Vintage Illustrations",
+        "creatorName": "Liam King",
+        
         "likes": 1850,
         "views": 4120,
         "sort_by": "Most Appreciated",
@@ -5264,9 +5264,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Futuristic UI Kit",
-        "creator_name": "Ella White",
-        "like": true,
+        "imageTitle": "Futuristic UI Kit",
+        "creatorName": "Ella White",
+        
         "likes": 1290,
         "views": 3290,
         "sort_by": "Recommended",
@@ -5318,9 +5318,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Elegant Invitation Cards",
-        "creator_name": "James Turner",
-        "like": true,
+        "imageTitle": "Elegant Invitation Cards",
+        "creatorName": "James Turner",
+        
         "likes": 1780,
         "views": 4021,
         "sort_by": "Most Followed",
@@ -5369,9 +5369,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Bohemian Pattern Set",
-        "creator_name": "Emma Thompson",
-        "like": true,
+        "imageTitle": "Bohemian Pattern Set",
+        "creatorName": "Emma Thompson",
+        
         "likes": 1590,
         "views": 3420,
         "sort_by": "Curated",
@@ -5420,9 +5420,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Classic Logo Collection",
-        "creator_name": "Mason Scott",
-        "like": false,
+        "imageTitle": "Classic Logo Collection",
+        "creatorName": "Mason Scott",
+        
         "likes": 450,
         "views": 890,
         "sort_by": "Most Viewed",
@@ -5471,9 +5471,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Colorful Gradients",
-        "creator_name": "Aiden Martinez",
-        "like": true,
+        "imageTitle": "Colorful Gradients",
+        "creatorName": "Aiden Martinez",
+        
         "likes": 1750,
         "views": 3810,
         "sort_by": "Most Recent",
@@ -5522,9 +5522,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Hand-drawn Icons",
-        "creator_name": "Sophia Walker",
-        "like": true,
+        "imageTitle": "Hand-drawn Icons",
+        "creatorName": "Sophia Walker",
+        
         "likes": 1620,
         "views": 3500,
         "sort_by": "Most Appreciated",
@@ -5572,9 +5572,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Minimal Line Art",
-        "creator_name": "Isabella Young",
-        "like": true,
+        "imageTitle": "Minimal Line Art",
+        "creatorName": "Isabella Young",
+        
         "likes": 1480,
         "views": 3100,
         "sort_by": "Recommended",
@@ -5623,9 +5623,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Watercolor Backgrounds",
-        "creator_name": "Alexander Wright",
-        "like": true,
+        "imageTitle": "Watercolor Backgrounds",
+        "creatorName": "Alexander Wright",
+        
         "likes": 1540,
         "views": 3280,
         "sort_by": "Most Followed",
@@ -5673,9 +5673,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Geometric Patterns",
-        "creator_name": "Charlotte Baker",
-        "like": false,
+        "imageTitle": "Geometric Patterns",
+        "creatorName": "Charlotte Baker",
+        
         "likes": 560,
         "views": 980,
         "sort_by": "Most Appreciated",
@@ -5741,9 +5741,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Abstract Artwork Collection",
-        "creator_name": "Oliver Harris",
-        "like": true,
+        "imageTitle": "Abstract Artwork Collection",
+        "creatorName": "Oliver Harris",
+        
         "likes": 1980,
         "views": 4320,
         "sort_by": "Recommended",
@@ -5794,9 +5794,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Nature-Inspired Illustrations",
-        "creator_name": "Luna Rodriguez",
-        "like": true,
+        "imageTitle": "Nature-Inspired Illustrations",
+        "creatorName": "Luna Rodriguez",
+        
         "likes": 1750,
         "views": 3900,
         "sort_by": "Most Followed",
@@ -5845,9 +5845,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Typography Pack",
-        "creator_name": "Lucas Martin",
-        "like": false,
+        "imageTitle": "Vintage Typography Pack",
+        "creatorName": "Lucas Martin",
+        
         "likes": 530,
         "views": 1100,
         "sort_by": "Curated",
@@ -5896,9 +5896,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Modern Web UI Elements",
-        "creator_name": "Aria Wilson",
-        "like": true,
+        "imageTitle": "Modern Web UI Elements",
+        "creatorName": "Aria Wilson",
+        
         "likes": 1670,
         "views": 3800,
         "sort_by": "Most Viewed",
@@ -5947,9 +5947,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Grunge Texture Pack",
-        "creator_name": "Nathan Allen",
-        "like": true,
+        "imageTitle": "Grunge Texture Pack",
+        "creatorName": "Nathan Allen",
+        
         "likes": 1430,
         "views": 3120,
         "sort_by": "Most Recent",
@@ -5998,9 +5998,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Abstract Background Collection",
-        "creator_name": "Ethan Wright",
-        "like": false,
+        "imageTitle": "Abstract Background Collection",
+        "creatorName": "Ethan Wright",
+        
         "likes": 490,
         "views": 920,
         "sort_by": "Most Followed",
@@ -6048,9 +6048,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Logo Set",
-        "creator_name": "Ella Thompson",
-        "like": true,
+        "imageTitle": "Vintage Logo Set",
+        "creatorName": "Ella Thompson",
+        
         "likes": 1570,
         "views": 3540,
         "sort_by": "Curated",
@@ -6098,9 +6098,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Poster Designs",
-        "creator_name": "Noah Baker",
-        "like": true,
+        "imageTitle": "Vintage Poster Designs",
+        "creatorName": "Noah Baker",
+        
         "likes": 1600,
         "views": 3760,
         "sort_by": "Most Recent",
@@ -6148,9 +6148,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Retro Badge Collection",
-        "creator_name": "Ava Wilson",
-        "like": true,
+        "imageTitle": "Retro Badge Collection",
+        "creatorName": "Ava Wilson",
+        
         "likes": 1650,
         "views": 3880,
         "sort_by": "Most Appreciated",
@@ -6198,9 +6198,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Pattern Collection",
-        "creator_name": "Olivia Martin",
-        "like": false,
+        "imageTitle": "Vintage Pattern Collection",
+        "creatorName": "Olivia Martin",
+        
         "likes": 540,
         "views": 1180,
         "sort_by": "Recommended",
@@ -6249,9 +6249,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Gothic Font Set",
-        "creator_name": "Mia Wilson",
-        "like": true,
+        "imageTitle": "Gothic Font Set",
+        "creatorName": "Mia Wilson",
+        
         "likes": 1550,
         "views": 3620,
         "sort_by": "Most Followed",
@@ -6317,9 +6317,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Retro Poster Designs",
-        "creator_name": "Jacob Baker",
-        "like": true,
+        "imageTitle": "Retro Poster Designs",
+        "creatorName": "Jacob Baker",
+        
         "likes": 1700,
         "views": 3800,
         "sort_by": "Most Appreciated",
@@ -6370,9 +6370,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Label Set",
-        "creator_name": "Ethan Harris",
-        "like": true,
+        "imageTitle": "Vintage Label Set",
+        "creatorName": "Ethan Harris",
+        
         "likes": 1630,
         "views": 3700,
         "sort_by": "Recommended",
@@ -6421,9 +6421,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Modern Abstract Shapes",
-        "creator_name": "John Doe",
-        "like": true,
+        "imageTitle": "Modern Abstract Shapes",
+        "creatorName": "John Doe",
+        
         "likes": 3421,
         "views": 7824,
         "sort_by": "Most Appreciated",
@@ -6491,9 +6491,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Vintage Typography",
-        "creator_name": "Jane Smith",
-        "like": true,
+        "imageTitle": "Vintage Typography",
+        "creatorName": "Jane Smith",
+        
         "likes": 2876,
         "views": 6382,
         "sort_by": "Most Appreciated",
@@ -6553,9 +6553,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Nature Landscape",
-        "creator_name": "William Johnson",
-        "like": true,
+        "imageTitle": "Nature Landscape",
+        "creatorName": "William Johnson",
+        
         "likes": 4123,
         "views": 8321,
         "sort_by": "Most Appreciated",
@@ -6608,9 +6608,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Digital Portrait",
-        "creator_name": "Alex Thompson",
-        "like": true,
+        "imageTitle": "Digital Portrait",
+        "creatorName": "Alex Thompson",
+        
         "likes": 3876,
         "views": 7282,
         "sort_by": "Most Appreciated",
@@ -6667,9 +6667,9 @@ export const data = [
     },
     {
         "image-array": [],
-        "image_name": "Abstract Oil Painting",
-        "creator_name": "Sophia Miller",
-        "like": true,
+        "imageTitle": "Abstract Oil Painting",
+        "creatorName": "Sophia Miller",
+        
         "likes": 4221,
         "views": 8931,
         "sort_by": "Most Appreciated",

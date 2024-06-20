@@ -5,7 +5,9 @@ import { data } from "../../data/content/images";
 import PopupSign from "../Footer/PopupSign";
 import { useAppState } from "../../context/Context";
 import Modal from "./Modal";
+import { HOST } from "../../data";
 const ContentCard = (item) => {
+  console.log(item)
   const {openModal, setOpenModal} = useAppState(false);
   return (
     <div className="flex flex-col gap-1 ">
@@ -13,8 +15,8 @@ const ContentCard = (item) => {
       onClick={() => {setOpenModal(true);localStorage.setItem("item", JSON.stringify(item));}}
       >
         <img
-          // src={item.images[Math.random() * item.images.length | 0]}
-          src={item.images[0]}
+          src={item.images[Math.random() * item.images.length | 0]}
+          // src={item.images[0]}
           alt="random"
           className="rounded-md w-[22rem] h-[16rem] object-cover"
           width={400}
@@ -57,11 +59,24 @@ const ContentCard = (item) => {
 const Content = () => {
   const [signupActive, setSignupActive] = useState(true);
   const { recommendedStates, setRecommendedStates } = useAppState("");
-  const [Cardsdata, setCardsData] = useState(data);
+  const [Cardsdata, setCardsData] = useState([]);
+  const [originalData, setOriginalData] = useState([]);
   const { openModal, setOpenModal } = useAppState(false);
   useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(`${HOST}cards/all`);
+      if(response.ok){
+        const data = await response.json();
+        setCardsData(data.properties);
+        setOriginalData(data.properties);
+        console.log(data.properties)
+      }
+    }
+    fetchData();
+  },[])
+  useEffect(() => {
     if (recommendedStates !== "") {
-      const filtered = data.filter((item) =>
+      const filtered = originalData.filter((item) =>
         item.sort_by.includes(recommendedStates)
       );
       setCardsData(filtered.map((item) => item));
