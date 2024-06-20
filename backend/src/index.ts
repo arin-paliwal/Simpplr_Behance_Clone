@@ -18,7 +18,8 @@ app.use(
     ],
   })
 );
-const port = parseInt(process.env.PORT || '80', 10);
+// const port = parseInt(process.env.PORT || '80', 10);
+const port = 80;
 app.get('/', (req: Request, res: Response) => {
     res.status(200).json({
         message: 'Hello World',
